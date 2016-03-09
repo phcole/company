@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>主页 - 武汉深之度科技有限公司</title>
+  <meta name="description" content="主页 - 武汉深之度科技有限公司" />
+  <meta name="keywords" content="主页 - 武汉深之度科技有限公司" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/base.min.css" />
+  <link rel="stylesheet" href="css/index.min.css" />
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <a class="logo" href="/"><img src="image/nav_logo_deepin_blue.png" alt="Site's logo" /></a>
+      <div class="nav">
+        <ul class="menu">
+          <li><a href='index.html'>首页</a></li>
+          <li><a href="product.html">产品</a></li>
+          <li><a href="combo.html">套餐</a></li>
+          <li><a href="case.html">案例</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="content" class="index">
+    <div class="page-main home-main" style="overflow:hidden;">
+      <div class="container">
+        <div style="width:1170px;margin:0 auto;overflow:hidden;">
+          <div style="padding-left:20px;border-left:10px solid blue;line-height:60px;margin-bottom:20px;background-color:white;">魅蓝 Note</div>
+          <div style="width:800px;margin-right:20px;float:left;background-color:white;">
+          	<img src="image/combo_preview_01.jpg" style="margin:20px;">
+          </div>
+          <div style="width:330px;padding:10px;height:420px;float:left;background-color:white;">
+          	<p>我是介绍</p>
+          	<p>我是介绍</p>
+          	<p>我是介绍</p>
+          </div>
+          <div style="width:100%;height:180px;margin:20px 0;float:left;background-color:white;transition:all .1s;overflow:hidden;">
+						<div style="overflow:hidden;">
+							<img src="image/sub_item_01.jpg" style="float:left;display:block;margin:21px 20px;">
+              <img src="image/sub_item_01.jpg" style="float:left;display:block;margin:21px 20px;">
+              <img src="image/sub_item_01.jpg" style="float:left;display:block;margin:21px 20px;">
+						</div>
+          	<div style="height:40px;line-height:40px;cursor:pointer;border-top:2px solid #f5f5f5;border-bottom:2px solid #f5f5f5;" id="combotype_1">详细标题部分(点击展开)</div>
+          	<div style="height:600px;line-height:600px;text-align:center;">我是详细</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="back-to-top"></div>
+  <div id="footer">
+    <div class="container">
+      <div id="about" class="panel">
+        <a class="title" href="#">关于我们</a>
+        <ul class="nav">
+          <li><a class="dark-gray" href='/about/introduction'>公司介绍</a></li>
+          <li><a class="dark-gray" href='/about/history'>发展历程</a></li>
+          <li><a class="dark-gray" href='/about/culture'>企业文化</a></li>
+          <li><a class="dark-gray" href='/about/honour'>资质荣誉</a></li>
+          <li><a class="dark-gray" href='/about/partners'>合作伙伴</a></li>
+          <li><a class="dark-gray" href='/about/duty'>企业责任</a></li>
+          <li><a class="dark-gray" href='/about/job/?category=1'>诚聘英才</a></li>
+        </ul>
+      </div>
+      <div id="contact" class="panel">
+        <a class="title" href="/about/contact">联系我们</a>
+        <ul class="nav">
+          <li>
+            <p><span class="address">研发中心：武汉市光谷大道77号光谷金融港B18栋6楼</span> <span class="tel">027-87805607</span></p>
+          </li>
+          <li>
+            <p><span class="address">运营中心：北京市海淀区知春路锦秋国际大厦B座501室</span> <span class="tel">010-62669499</span></p>
+          </li>
+          <li>
+            <p><span class="address">营销中心：上海市长宁区愚园路1258号15A01室</span> <span class="tel">021-60726030</span></p>
+          </li>
+        </ul>
+      </div>
+      <div id="social" class="panel">
+        <img class="wechat" src="image/foot_QR-code.jpg" />
+        <div class="info">
+          <div class="icons">
+            <a class="icon weibo" target="_blank" href="http://weibo.com/linuxdeepinnew"></a> <a class="icon blog" target="_blank" href="http://blog.deepin.org/?language=cn"></a>
+          </div>
+          <div class="copyright">
+            <p class="copyright">Copyright &copy; 2011-2016 武汉深之度科技有限公司</p>
+            <p class="beian">鄂ICP备14003693号-37</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+  document.getElementById("combotype_1").addEventListener("click", function(e){
+    var ele = e.target.parentElement;
+    if (ele.clientHeight == "180") {
+      ele.style.height="";
+      e.target.innerHTML="详细标题部分(点击收起)";
+      setTimeout(function(){
+        window.scrollTo(0, ele.offsetTop);
+      }, 100);
+    } else {
+      ele.style.height="180px";
+      e.target.innerHTML="详细标题部分(点击展开)";
+    }
+  });
+</script>
+</body>
+</html>

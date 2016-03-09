@@ -15,7 +15,7 @@
 
 #news .container,
 #products .container,
-#cases .container {
+.cases .container {
   width: 1170px;
 }
 
@@ -484,6 +484,7 @@ a.blue:hover {
 
 .digest-element .digest-link:hover .digest-panel .digest-content {
   opacity: 1;
+  left:0;
 }
 
 .digest-element .digest-link .digest-panel {
@@ -519,6 +520,8 @@ a.blue:hover {
   height: 58px;
   overflow: hidden;
   white-space: pre-wrap;
+  position:relative;
+  left:-100%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;

@@ -1,16 +1,14 @@
-﻿body {
+body {
+  min-width:1226px;
   margin: 0;
   padding: 0;
   font: 12px "Microsoft Yahei", "宋体", "Source Han Sans SC", "Arial Narrow", HELVETICA, sans-serif;
-  min-width: 1170px;
-  background-color: #FFFFFF;
 }
 
 .container {
   width: 1226px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 #news .container,
@@ -191,6 +189,10 @@ a.blue:hover {
 #header .container * {
   display: inline-block;
   height: 100%;
+}
+
+#header .container .logo{
+  margin-left:35px;
 }
 
 #header .container .logo::before {
@@ -379,9 +381,7 @@ a.blue:hover {
 }
 /*@newsPanelWidth: @containerWidth / 2;*/
 #gallery {
-  position: relative;
   height: 319px;
-  overflow: hidden;
 }
 
 #gallery .arrow {
@@ -659,9 +659,9 @@ a.blue:hover {
 }
 
 #footer .panel {
-  height: 147px;
+  min-width:320px;
   display: inline-block;
-  margin-top: 27px;
+  margin: 27px 0 0 35px;
   vertical-align: top;
   white-space: normal;
 }
@@ -767,7 +767,7 @@ a.blue:hover {
 }
 
 .page-content {
-  width: 795px;
+  width: 850px;
   padding-bottom: 70px;
 }
 
@@ -813,8 +813,8 @@ a.blue:hover {
   position: relative;
   padding: 14px 0 14px 23px;
   margin: 1px 0;
-  border-left: 4px solid #F0F0F0;
-  background-color: #F0F0F0;
+  border-left: 4px solid #E7EF77;
+  background-color: #FFF;
 }
 
 .page-nav .page-nav-body .menu li a {
@@ -921,7 +921,7 @@ a.blue:hover {
 
 .list-cell .list-content {
   height: 131px;
-  width: 534px;
+  width: 560px;
 }
 
 .list-cell .list-content .list-title {

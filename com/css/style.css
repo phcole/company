@@ -5,16 +5,14 @@ body {
   font: 12px "Microsoft Yahei", "宋体", "Source Han Sans SC", "Arial Narrow", HELVETICA, sans-serif;
 }
 
-.container {
-  width: 1226px;
-  height: 100%;
-  margin: 0 auto;
+a {
+  color: #282828;
+  text-decoration: none
 }
 
-#news .container,
-#products .container,
-.cases .container {
-  width: 1170px;
+a:hover {
+  color: #138BCA;
+  text-decoration: none
 }
 
 ul,
@@ -34,14 +32,23 @@ li {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   /*Fixed the bug under IE8.*/
   border: none;
 }
+
+.container {
+  width: 1226px;
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+#news .container,
+#products .container,
+.cases .container {
+  width: 1170px;
+}
+
 
 .breadcrumbs ul li {
   display: inline-block;
@@ -472,8 +479,12 @@ a.blue:hover {
   background-color: #fff;
 }
 
+.digest-element .digest-link .digest-pic{
+  width:555px;
+  height:291px;
+}
+
 .digest-element .digest-link .digest-panel {
-  width: 100%;
   padding: 22px 23px 0 23px;
   overflow: hidden;
 }
@@ -508,7 +519,8 @@ a.blue:hover {
   position: relative;
 }
 
-#news .cell-title .title {
+#news .cell-title .title,
+.xm-plain-box .box-hd .title {
   display: inline-block;
   color: #282828;
   font-size: 18px;
@@ -528,14 +540,11 @@ a.blue:hover {
 #news .container #topics-container {
   display: inline-block;
   width: 555px;
-  /*height: 336px;*/
-  /*overflow: hidden;*/
   vertical-align: top;
 }
 
 #news .container #events-container {
-  /*width: 515px;*/
-  padding-right: 33px;
+  padding-right: 55px;
 }
 
 #news .container #events-container .event {
@@ -571,7 +580,7 @@ a.blue:hover {
   color: #282828;
   display: block;
   overflow: hidden;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 4px;
   white-space: nowrap;
   -o-text-overflow: ellipsis;
@@ -627,17 +636,13 @@ a.blue:hover {
   transition: all .2s linear;
 }
 
-#news .container #topics-container .digest-element a,
-#news .container #topics-container .digest-element a:hover {
+#news .container #topics-container .digest-element .digest-link,
+#news .container #topics-container .digest-element .digest-link:hover {
   color:#333;
 }
 
 #news .container #topics-container .digest-element img {
   display:block;
-}
-
-#news .container #topics-container .digest-element .digest-panel {
-  width: 509px;
 }
 
 #news .container #topics-container .digest-element .digest-panel .digest-content {
@@ -654,23 +659,28 @@ a.blue:hover {
 #footer {
   clear: both;
   height: 174px;
+  color:#C6C6C6;
   white-space: nowrap;
   background-color: #444444;
 }
 
 #footer .panel {
-  min-width:320px;
-  display: inline-block;
-  margin: 27px 0 0 35px;
+  display:block;
+  float:left;
+  margin: 27px 0 0 14px;
   vertical-align: top;
   white-space: normal;
 }
 
 #footer .panel .title {
-  display: inline-block;
+  display: block;
   color: #FFFFFF;
   font-size: 16px;
   margin-bottom: 14px;
+}
+
+#footer .panel .nav {
+  float:left;
 }
 
 #footer .panel li a,
@@ -678,21 +688,20 @@ a.blue:hover {
   line-height: 26px;
 }
 
-#footer .panel li span {
-  color: #C6C6C6;
-}
-
 #footer #about {
-  width: 319px;
+  margin-left:41px;
+  width:270px;
 }
 
-#footer #about .nav {
-  width: 100%;
+#footer #contact {
+  width:554px;
+}
+#footer #contact .nav {
+  width:256px;
 }
 
-#footer #about .nav li {
-  display: inline-block;
-  margin-right: 36px;
+#footer #contact .nav.second {
+  margin-left:28px;
 }
 
 #footer #social > * {
@@ -701,52 +710,26 @@ a.blue:hover {
 }
 
 #footer #social .wechat {
-  width: 95px;
-  height: 95px;
-  margin: 0 21px 0 60px;
+  float:left;
+  width: 110px;
+  
 }
 
-#footer #social .icons {
-  vertical-align: top;
-  margin-bottom: 13px;
+#footer #social .wechat img {
+  width:95px;
+  margin-right:15px;
+  height:95px;
+  display:block;
 }
 
-#footer #social .icons .icon {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
-  margin-right: 16px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background: #828282 url('../image/foot_icon.png') no-repeat;
+#footer #social .nav li img {
+  margin:0 0 5px 78px;
 }
 
-#footer #social .icons .icon.weibo {
-  background-position: 6px 6px;
-}
-
-#footer #social .icons .icon.weibo:hover {
-  background-color: #FF8400;
-}
-
-#footer #social .icons .icon.blog {
-  background-position: 8px -58px;
-}
-
-#footer #social .icons .icon.blog:hover {
-  background-color: #138BCA;
-}
-
-#footer #social .copyright p {
+#footer p.copyright {
   color: #828282;
-  line-height: 18px;
-}
-
-#banner {
-  height: 215px;
-  background-color: #DCE4E7;
+  line-height:18px;
+  text-align:center;
 }
 
 #banner .title {
@@ -926,7 +909,6 @@ a.blue:hover {
 
 .list-cell .list-content .list-title {
   display: block;
-  color: #282828;
   width: 100%;
   overflow: hidden;
   font-size: 18px;
@@ -936,7 +918,6 @@ a.blue:hover {
 }
 
 .list-cell .list-content .list-digest {
-  color: #999999;
   width: 100%;
   height: 55px;
   margin: 18px 0 8px 0;
@@ -995,7 +976,7 @@ a.blue:hover {
   width: 40px;
   height: 40px;
   right: 0;
-  bottom: 300px;
+  bottom: 190px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1009,10 +990,6 @@ a.blue:hover {
 
 #banner.news {
   background: url('../image/news_banner.jpg') no-repeat;
-}
-
-#news-lists .list-cell .list-content .list-title:hover {
-  color: #138BCA;
 }
 
 #banner.product-list {
@@ -1165,7 +1142,8 @@ a.blue:hover {
   background-image: url(../image/support_banner.jpg);
 }
 
-#banner.product {
+#banner.product {  
+  height:320px;
   background-image: url(../image/product_banner.jpg);
 }
 
@@ -1295,6 +1273,7 @@ a.blue:hover {
 }
 
 #banner.cases {
+  height:215px;
   background: url(../image/cases_banner.jpg) no-repeat 50%;
 }
 

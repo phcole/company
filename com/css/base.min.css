@@ -224,16 +224,6 @@ table {
 	border-spacing: 0
 }
 
-a {
-	color: #757575;
-	text-decoration: none
-}
-
-a:hover {
-	color: #ff6700;
-	text-decoration: none
-}
-
 .clearfix {
 	*zoom: 1
 }
@@ -262,12 +252,6 @@ a:hover {
 .sep,.ndash {
 	margin: 0 .25em;
 	font-family: sans-serif
-}
-
-.container {
-	*zoom: 1;
-	margin-right: auto;
-	margin-left: auto
 }
 
 .container:before,.container:after {
